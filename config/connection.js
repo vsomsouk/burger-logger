@@ -14,3 +14,13 @@ const connection = mysql.createConnection({
   password: "HELLO",
   database: "burgers_db"
 });
+
+connection.connect(function(err) {
+  if (err) {
+    console.error("There is an error");
+    return;
+  }
+  console.log("You are connected");
+});
+
+
