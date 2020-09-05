@@ -1,20 +1,14 @@
 const mysql = require("mysql");
-const inquirer = require("inquirer");
 
 const connection = mysql.createConnection({
   host: "localhost",
-
-  // port
   port: 3306,
-
-  //  username
   user: "root",
-
-  // password
   password: "HELLO",
   database: "burgers_db"
 });
 
+//make connection
 connection.connect(function(err) {
   if (err) {
     console.error("There is an error");
@@ -23,4 +17,5 @@ connection.connect(function(err) {
   console.log("You are connected");
 });
 
-
+// Export connection for our ORM to use.
+module.exports = connection;
