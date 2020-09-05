@@ -1,12 +1,6 @@
-//using cat app activity as a guide
-
 const connection = require("./connection")
 
-// Helper function for SQL syntax.
-// Let's say we want to pass 3 values into the mySQL query.
-// In order to write the query, we need 3 question marks.
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
-// ["?", "?", "?"].toString() => "?,?,?";
+
 function printQuestionMarks(num) {
     var arr = [];
   
@@ -41,9 +35,9 @@ function printQuestionMarks(num) {
   }
   
   // Object for all our SQL statement functions.
-  var orm = {
+  const orm = {
     all: function(tableInput, cb) {
-      var queryString = "SELECT * FROM " + tableInput + ";";
+      const queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
@@ -73,7 +67,7 @@ function printQuestionMarks(num) {
     },
     // An example of objColVals would be {name: panther, sleepy: true}
     update: function(table, objColVals, condition, cb) {
-      var queryString = "UPDATE " + table;
+      const queryString = "UPDATE " + table;
   
       queryString += " SET ";
       queryString += objToSql(objColVals);
@@ -104,6 +98,6 @@ function printQuestionMarks(num) {
     }
   };
   
-  // Export the orm object for the model (cat.js).
+  // Export the orm object for the model (burger.js).
   module.exports = orm;
   
