@@ -31,8 +31,7 @@ $(function() {
                 devoured: 0           
          };
         
-      };
-  
+
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
@@ -44,6 +43,7 @@ $(function() {
           location.reload();
         }
       );
+     };
     });
   });
   
