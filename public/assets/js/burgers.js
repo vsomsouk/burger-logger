@@ -23,8 +23,8 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      let burgerInfo =  $("#ca").val().trim(),
-        if(burgerInfo) {
+      let burgerInfo = $("ca").val().trim();
+        if (burgerInfo) {
             let newBurger = {
                 burger_name: $("#ca").val().trim(),
                 devoured: 0           

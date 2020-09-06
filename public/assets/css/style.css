@@ -1,5 +1,37 @@
 body {
-    background: gold;
+    background: white;
+}
+
+.container {
+    width: 75%;
+    margin-top: 5%;
+    border: solid orange;
+}
+
+.header, .prompt{
+    text-align:center;
+}
+
+.vspace {
+    margin-bottom: 10%;
+}
+
+.col, .burgs {
+    margin-left: 5%;
+    margin-right: 10%
 }
 
 
+button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 20%;
+  }
