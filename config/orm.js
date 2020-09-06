@@ -37,7 +37,7 @@ function printQuestionMarks(num) {
   }
   
   // Object for all our SQL statement functions.
-  const orm = {
+  let orm = {
     all: function(tableInput, cb) {
       let queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
@@ -47,6 +47,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
+    
     create: function(table, cols, vals, cb) {
       let queryString = "INSERT INTO " + table;
   
