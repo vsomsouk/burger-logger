@@ -1,5 +1,5 @@
 //Inside burger.js, import orm.js into burger.js
-const orm = require("../config/orm")
+const orm = require("../config/orm.js")
 
 
 
