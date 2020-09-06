@@ -1,11 +1,12 @@
 body {
-    background: white;
+    background: orange;
+    font-family: 'Bungee', cursive;
 }
 
 .container {
     width: 75%;
     margin-top: 5%;
-    border: solid orange;
+    border: solid orangered;
 }
 
 .header, .prompt{
@@ -18,14 +19,14 @@ body {
 
 .col, .burgs {
     margin-left: 5%;
-    margin-right: 10%
+    margin-right: 5%
 }
 
 
 button {
     margin: 0 auto;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 img {
