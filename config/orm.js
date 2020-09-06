@@ -1,7 +1,7 @@
 let connection = require("../config/connection.js")
 
 function printQuestionMarks(num) {
-  var arr = [];
+  let arr = [];
 
   for (var i = 0; i < num; i++) {
     arr.push("?");
@@ -13,7 +13,7 @@ function printQuestionMarks(num) {
   // Helper function to convert object key/value pairs to SQL syntax
   
   function objToSql(ob) {
-    var arr = [];
+    let arr = [];
 
     
   
@@ -37,7 +37,7 @@ function printQuestionMarks(num) {
   }
   
   // Object for all our SQL statement functions.
-  let orm = {
+  const orm = {
     all: function(tableInput, cb) {
       let queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, function(err, result) {
