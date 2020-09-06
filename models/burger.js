@@ -1,11 +1,11 @@
 //Inside burger.js, import orm.js into burger.js
-const orm = require("../config/orm.js")
+let orm = require("../config/orm.js")
 
 
 
 //Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
 
-const burger = {
+let burger = {
     all: function(cb) {
       orm.all("burgers", function(res) {
         cb(res);

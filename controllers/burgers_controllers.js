@@ -1,7 +1,7 @@
 //Inside the burgers_controller.js file, import the following: express, router, burger.js (models)
-const express = require("express");
-const router = express.Router();
-const burger = require("../models/burger.js")
+let express = require("express");
+let router = express.Router();
+let burger = require("../models/burger.js")
 
 
 //Create the router for the app, and export the router at the end of your file
@@ -9,7 +9,7 @@ const burger = require("../models/burger.js")
 //GET
 router.get("/", function(req, res) {
     burger.all(function(data) {
-      const hbsObject = {
+      let hbsObject = {
         burgers: data
       };
       console.log(hbsObject);
@@ -31,7 +31,7 @@ router.get("/", function(req, res) {
   
   //PUT
   router.put("/api/burgers/:id", function(req, res) {
-    const condition = "id = " + req.params.id;
+    let condition = "id = " + req.params.id;
   
     console.log("condition", condition);
   
