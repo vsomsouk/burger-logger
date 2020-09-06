@@ -5,7 +5,7 @@ $(function() {
       let devouredState = $(this).data("devoured");
   
       let newState = {
-        devoured: devouredState
+        devoured: "true"
       };
   
       // Send the PUT request.
@@ -23,8 +23,6 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      let burgerInfo = $("#ca").val().trim();
-        if (burgerInfo) {
             let newBurger = {
                 burger_name: $("#ca").val().trim(),
                 devoured: 0           
@@ -42,7 +40,6 @@ $(function() {
           location.reload();
         }
       );
-     };
     });
   });
   

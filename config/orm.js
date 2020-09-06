@@ -1,7 +1,7 @@
 let connection = require("../config/connection.js")
 
 function printQuestionMarks(num) {
-  let arr = [];
+  var arr = [];
 
   for (var i = 0; i < num; i++) {
     arr.push("?");
@@ -13,7 +13,7 @@ function printQuestionMarks(num) {
   // Helper function to convert object key/value pairs to SQL syntax
   
   function objToSql(ob) {
-    let arr = [];
+    var arr = [];
 
     
   
@@ -47,7 +47,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    
+
     create: function(table, cols, vals, cb) {
       let queryString = "INSERT INTO " + table;
   
