@@ -15,7 +15,7 @@ MIT
 https://radiant-wave-21711.herokuapp.com/
 
 ## Screenshot
-<img src=".img/screenshot.JPG">
+<img src="./public/assets/img/screenshot.JPG" width="650" height="500">
 
 
 ## Questions:
