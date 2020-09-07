@@ -1,7 +1,7 @@
 # Devour a Burger!
 
 ## Description
-Using a MVC design pattern,  MySQL, Node, Express, Handlebars and ORM will be used to create a burger logger. User will be able to add a burger and let sit in queue. When the user designs which burger they want to devour, they can click a button and have the burger devoured.
+Using a MVC design pattern, MySQL, Node, Express, Handlebars and ORM will be used to create a burger logger. User will be able to add a burger and let it sit in queue. When the user decides which burger they want to devour, they can click a button and have the burger devoured.
 
 
 ## Installation
