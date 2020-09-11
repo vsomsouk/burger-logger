@@ -42,6 +42,7 @@ function printQuestionMarks(num) {
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
+          console.log (orm)
         }
         cb(result);
       });
